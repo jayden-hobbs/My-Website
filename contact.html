@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jayden Hobbs | Contact</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
@@ -25,33 +26,43 @@
 
     <main>
         <section class="content">
-            <h1>Contact Me</h1>
-            <p>Get in touch with me through any of these methods:</p>
-            
-            <div class="contact-info">
-                <p>Email: your.email@example.com</p>
-                <p>LinkedIn: <a href="#">linkedin.com/in/jaydenhobbs</a></p>
-                <p>GitHub: <a href="#">github.com/jaydenhobbs</a></p>
-            </div>
+            <div class="contact-grid">
+                <!-- Left Column -->
+                <div class="contact-card">
+                    <h1>Get in Touch 📬</h1>
+                    <p class="contact-intro">I'm always open to new opportunities and connections. Feel free to reach out!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <a href="mailto:me@jaydenhobbs.co.uk" class="social-badge email">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </div>
 
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                        <div class="contact-item">
+                            <a href="https://www.linkedin.com/in/jaydenhobbs/" target="_blank" class="social-badge linkedin">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+
+                        <div class="contact-item">
+                            <a href="https://github.com/jayden-hobbs" target="_blank" class="social-badge github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <!-- Right Column -->
+                <div class="contact-form">
+                    <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=EoGa175PekGhEs0PtJDYXO7_mgTjwuBOvwZRTqY8MD9URU9PQlFGQzlWMDVKVjRKRlpVODlIWE5FMS4u" 
+                            frameborder="0" 
+                            marginheight="0" 
+                            marginwidth="0">
+                        Loading…
+                    </iframe>
                 </div>
-                
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                
-                <button type="submit">Send Message</button>
-            </form>
+            </div>
         </section>
     </main>
 

@@ -63,11 +63,9 @@ main {
 }
 
 .content {
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
-    overflow-x: hidden;
+    padding: 2rem;
 }
 
 .content h1 {
@@ -275,24 +273,7 @@ footer {
 
     .project-card {
         width: 100%;
-        margin: 1rem 0;
-    }
-
-    .about-column {
-        width: 100%;
-        padding: 1rem;
-    }
-    
-    .social-feed-container {
-        width: 100%;
-        padding: 1rem;
-    }
-
-    /* Adjust any tables or wide content */
-    table {
-        display: block;
-        max-width: 100%;
-        overflow-x: auto;
+        min-height: auto;
     }
 }
 
@@ -327,10 +308,102 @@ footer {
     opacity: 0.9;
 }
 
-/* Prevent horizontal scrolling */
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+/* Social page styles */
+.social-feed-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.social-title {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Social badges container */
+.social-badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    padding: 0 1rem;
+}
+
+/* Enhanced badge styles */
+.social-badge {
+    padding: 1rem 1.8rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-width: 160px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.social-badge i {
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+}
+
+/* Badge colors with gradients */
+.social-badge.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+}
+
+.social-badge.linkedin {
+    background: linear-gradient(45deg, #0077b5, #00a0dc);
+    color: white;
+}
+
+.social-badge.github {
+    background: linear-gradient(45deg, #24292e, #404448);
+    color: white;
+}
+
+.social-badge.twitter {
+    background: linear-gradient(45deg, #000000, #333333);
+    color: white;
+}
+
+/* X feed styling */
+.x-feed {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .social-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .social-badges-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .social-badge {
+        width: 100%;
+        max-width: 220px;
+    }
 } 

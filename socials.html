@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jayden Hobbs | Socials</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
@@ -24,18 +25,37 @@
     </header>
 
     <main>
-        <section class="content">
-            <h1>My Social Media</h1>
-            <div class="social-feed-container">
-                <!-- X Timeline Embed -->
+        <div class="social-feed-container">
+            <h1 class="social-title">My Social Media 📱</h1>
+            
+            <!-- Social Badges -->
+            <div class="social-badges-container">
+                <a href="https://www.instagram.com/jayden.hobbs/" target="_blank" class="social-badge instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/jaydenhobbs/" target="_blank" class="social-badge linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/jayden-hobbs" target="_blank" class="social-badge github">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://twitter.com/jayden_cyberIT" target="_blank" class="social-badge twitter">
+                    <i class="fa-brands fa-x-twitter"></i> X (Twitter)
+                </a>
+            </div>
+
+            <div class="x-feed">
                 <a class="twitter-timeline" 
                    data-height="600" 
+                   data-theme="light"
+                   data-chrome="noheader nofooter noborders"
+                   data-tweet-limit="20"
                    href="https://twitter.com/jayden_cyberIT">
                    Tweets by Jayden Hobbs
                 </a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
