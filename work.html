@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html">JH</a>
+                <a href="index.html">Jayden Hobbs</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -24,24 +24,36 @@
 
     <main>
         <section class="content">
-            <h1>My Work</h1>
-            
-            <div class="project">
-                <h2>Project 1</h2>
-                <p>A web application built using React and Node.js</p>
-                <a href="#" class="project-link">View Project</a>
-            </div>
+            <h1>My Projects</h1>
+            <div class="work-container">
+                <!-- LBU FOCP Portfolio Project -->
+                <div class="project-card" id="focp-card">
+                    <h3>LBU FOCP Portfolio</h3>
+                    <div class="language-badges">
+                        <span class="badge python">Python 80.1%</span>
+                        <span class="badge java">Java 6.8%</span>
+                        <span class="badge rust">Rust 5.5%</span>
+                        <span class="badge ruby">Ruby 4.2%</span>
+                        <span class="badge kotlin">Kotlin 3.4%</span>
+                    </div>
+                    <p class="description">Programming portfolio from my Fundamentals of Computer Programming module at Leeds Beckett University.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/jayden-hobbs/LBU-FOCP-Portfolio" target="_blank" class="github-link">View on GitHub</a>
+                    </div>
+                </div>
 
-            <div class="project">
-                <h2>Project 2</h2>
-                <p>Mobile app development using Flutter</p>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-
-            <div class="project">
-                <h2>Project 3</h2>
-                <p>E-commerce website with payment integration</p>
-                <a href="#" class="project-link">View Project</a>
+                <!-- Darts Scorer Project -->
+                <div class="project-card" id="darts-card">
+                    <h3>Darts Scorer</h3>
+                    <div class="language-badges">
+                        <span class="badge sql">SQL 74.8%</span>
+                        <span class="badge python">Python 25.2%</span>
+                    </div>
+                    <p class="description">A Dart Scorer application that manages player scores, validates inputs, and provides checkout suggestions.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/jayden-hobbs/Darts-Scorer" target="_blank" class="github-link">View on GitHub</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -49,5 +61,9 @@
     <footer>
         <p>&copy; 2024 Jayden Hobbs. All rights reserved.</p>
     </footer>
+
+    <script src="js/project-details.js"></script>
+    <script src="js/github-stats.js"></script>
+    <script src="js/github-api.js"></script>
 </body>
-</html> 
+</html>
