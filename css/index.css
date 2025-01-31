@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 
 .intro-text h1 {
@@ -10,17 +11,12 @@
     margin-bottom: 0.5rem;
 }
 
-.intro-text p {
-    max-width: 600px;
-    margin-bottom: 2rem;
-}
-
 .social-links {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    width: 100%;
-    margin: 0 auto;
+    margin: 1rem auto;
+    width: auto;  /* Changed from fixed width */
 }
 
 .social-badge {
@@ -28,30 +24,29 @@
     align-items: center;
     padding: 0.75rem 1.5rem;
     border-radius: 6px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease;
-    width: 160px;
-    justify-content: center;
-}
-
-.social-badge i {
-    margin-right: 0.5rem;
-    font-size: 1.3rem;
+    min-width: 140px;  /* Added to make badges equal width */
+    justify-content: center;  /* Center badge content */
 }
 
 .social-badge.github {
-    background: linear-gradient(45deg, var(--secondary-color), #404448);
+    background: linear-gradient(45deg, #24292e, #404448);
     color: white;
 }
 
 .social-badge.linkedin {
-    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(45deg, #0077b5, #00a0dc);
     color: white;
 }
 
 .social-badge:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.social-badge i {
+    margin-right: 0.5rem;
 } 
