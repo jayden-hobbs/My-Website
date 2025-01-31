@@ -154,15 +154,17 @@ main {
 
 /* Language Badges */
 /* Language Colors */
-.badge.python { background-color: #3572A5; }
-.badge.java { background-color: #b07219; }
-.badge.javascript { background-color: #f1e05a; color: #000; }
-.badge.html { background-color: #e34c26; }
-.badge.css { background-color: #563d7c; }
-.badge.ruby { background-color: #701516; }
-.badge.rust { background-color: #dea584; }
-.badge.kotlin { background-color: #A97BFF; }
-.badge.sql { background-color: #e38c00; }
+.badge.python { background-color: #306998; }
+.badge.java { background-color: #b5651d; }
+.badge.javascript { background-color: #f7df1e; color: #000; }
+.badge.html { background-color: #d64d3a; }
+.badge.css { background-color: #264de4; }
+.badge.ruby { background-color: #e0115f; }
+.badge.rust { background-color: #a45b1f; }
+.badge.kotlin { background-color: #7f52ff; }
+.badge.sql { background-color: #f29111; }
+.badge.json { background-color: #0e76a8; }
+
 
 
 .badge {
