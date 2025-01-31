@@ -1,3 +1,14 @@
+/* Global styles */
+:root {
+    /* Color palette */
+    --primary-color: #0077b5;
+    --secondary-color: #24292e;
+    --text-color: #333333;
+    --background-color: #ffffff;
+    --accent-color: #00a0dc;
+    --nav-footer-color: #64b5f6;  /* Darker blue */
+}
+
 /* Reset and general styles */
 * {
     margin: 0;
@@ -11,12 +22,13 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #f5f6fa;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 /* Navigation styles */
 .navbar {
-    background-color: #4a90e2;
+    background-color: #2196f3;  /* Darker blue background */
     padding: 1rem 2rem;
     position: fixed;
     width: 100%;
@@ -29,7 +41,7 @@ body {
 }
 
 .logo a {
-    color: #fff;
+    color: white;  /* Changed to white for better contrast */
     font-size: 1.3rem;
     font-weight: 500;
     text-decoration: none;
@@ -44,7 +56,7 @@ body {
 }
 
 .nav-links a {
-    color: #fff;
+    color: white;  /* Changed to white for better contrast */
     text-decoration: none;
     font-size: 1.1rem;
     padding: 0.5rem;
@@ -52,7 +64,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #FFFFFF;
+    color: #e3f2fd;  /* Light blue on hover */
 }
 
 /* Main content styles */
@@ -227,11 +239,15 @@ main {
 
 /* Footer */
 footer {
-    background-color: #4a90e2;
-    color: white;
+    background-color: #2196f3;  /* Darker blue background - same as navbar */
+    color: white;  /* Changed to white for better contrast */
     text-align: center;
     padding: 1rem;
     margin-top: auto;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Responsive Design */

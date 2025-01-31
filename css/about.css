@@ -1,0 +1,65 @@
+/* Main container for cards */
+.about-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual card styling */
+.about-column {
+    width: 33.33%;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.about-column:hover {
+    transform: translateY(-5px);
+}
+
+/* Text styling */
+.about-column h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.about-column h3 {
+    color: #34495e;
+    margin-top: 1rem;
+}
+
+.about-column p, 
+.about-column ul {
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-column ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.about-column li {
+    margin-bottom: 0.5rem;
+}
+
+/* Only stack on mobile */
+@media screen and (max-width: 768px) {
+    .about-columns {
+        flex-direction: column;
+    }
+    
+    .about-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+} 

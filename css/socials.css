@@ -45,11 +45,11 @@
 }
 
 .social-badge.linkedin {
-    background: linear-gradient(45deg, #0077b5, #00a0dc);
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
 }
 
 .social-badge.github {
-    background: linear-gradient(45deg, #24292e, #404448);
+    background: linear-gradient(45deg, var(--secondary-color), #404448);
 }
 
 .social-badge.twitter {
