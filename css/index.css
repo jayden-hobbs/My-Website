@@ -1,0 +1,47 @@
+.intro-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-badge {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    width: 140px;
+    transition: all 0.3s ease;
+}
+
+.social-badge.github {
+    background-color: #24292e;
+    color: white;
+}
+
+.social-badge.linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+
+.social-badge:hover {
+    opacity: 0.9;
+} 
