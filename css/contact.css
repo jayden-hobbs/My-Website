@@ -1,3 +1,22 @@
+.page-content {
+    max-width: 1200px;
+    margin: 180px auto 0;
+    padding: 0 20px;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.left-column {
+    flex: 1;
+    max-width: 500px;
+}
+
+.right-column {
+    flex: 1;
+    max-width: 500px;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -51,11 +70,19 @@
 }
 
 .contact-item .social-badge.linkedin {
-    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(45deg, #0077b5, #00a0dc);
+}
+
+.contact-item .social-badge.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.contact-item .social-badge.x {
+    background: linear-gradient(45deg, #000000, #333333);
 }
 
 .contact-item .social-badge.github {
-    background: linear-gradient(45deg, var(--secondary-color), #404448);
+    background: linear-gradient(45deg, #24292e, #404448);
 }
 
 .contact-form {
@@ -86,6 +113,16 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+    .page-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+    
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
