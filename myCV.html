@@ -3,80 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV - Jayden Hobbs</title>
+    <title>CV | Jayden Hobbs</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        main {
-            flex-grow: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-
-        .pdf-container {
-            width: 90%;
-            max-width: 900px;
-            height: 90vh;
-            border: 1px solid #ccc;
-        }
-
-        embed {
-            width: 100%;
-            height: 100%;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #4a90e2;
-            color: white;
-        }
-
-        footer a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
+    <div class="matrix-bg"></div>
+    
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html">Jayden Hobbs</a>
+                <a href="index.html">&lt;JH/&gt;</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="work.html">My Work</a></li>
-                <li><a href="myCV.html">My CV</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Projects</a></li>
+                <li><a href="myCV.html">CV</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="pdf-container">
-            <embed src="JAYDEN-HOBBS-CV.pdf" type="application/pdf">
-        </div>
+        <section class="content">
+            <div class="section-header">
+                <h2><i class="fas fa-file-alt"></i> Curriculum Vitae</h2>
+            </div>
+            <div class="cv-actions">
+                <a href="JAYDEN-HOBBS-CV.pdf" download class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+                <a href="JAYDEN-HOBBS-CV.pdf" target="_blank" class="btn btn-outline">
+                    <i class="fas fa-external-link-alt"></i> Open in New Tab
+                </a>
+            </div>
+            <div class="cv-content">
+                <div class="cv-header">
+                    <div class="cv-header-left">
+                        <div class="cv-title">
+                            <h1>JAYDEN HOBBS</h1>
+                            <h2>CYBER SECURITY STUDENT</h2>
+                        </div>
+                        <div class="cv-contact">
+                            <p><i class="fas fa-map-marker-alt"></i> Brighton, England</p>
+                            <p><i class="fas fa-envelope"></i> me@jaydenhobbs.co.uk</p>
+                            <p><i class="fas fa-phone"></i> +44 7484 346569</p>
+                        </div>
+                    </div>
+                    <div class="cv-header-right">
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="#" class="social-link"><i class="fas fa-globe"></i> Website</a>
+                            <a href="#" class="social-link"><i class="fas fa-baseball-ball"></i> LTA Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-grid">
+                    <div class="cv-left">
+                        <div class="cv-section">
+                            <h3><i class="fas fa-graduation-cap"></i> EDUCATION</h3>
+                            <div class="education-item">
+                                <h4>LEEDS BECKETT UNIVERSITY</h4>
+                                <p class="date">09/24 – CONT</p>
+                                <p>Currently in 1st Year of BSc (Hons) Cyber Security studying programming, digital forensics, ethical hacking and penetration testing and databases</p>
+                            </div>
+                            <div class="education-item">
+                                <h4>BRIGHTON HOVE SIXTH FORM COLLEGE (BHASVIC)</h4>
+                                <p class="date">09/22 – 07/24</p>
+                                <p>Two A-Levels including History and Physics and a Distinction in National Extended Certificate in Computing (Games, Apps and Encryption) BTEC Level 3</p>
+                            </div>
+                            <div class="education-item">
+                                <h4>LANCING COLLEGE</h4>
+                                <p class="date">09/19 – 07/22</p>
+                                <p>9 GCSE's including 7's in Maths, English, History and Geography and Grade 87 in Combined Science. Achieved Duke of Edinburgh Bronze Award and ABRSM Grade 2 in Trombone</p>
+                            </div>
+                        </div>
+
+                        <div class="cv-section">
+                            <h3><i class="fas fa-briefcase"></i> WORK EXPERIENCE</h3>
+                            <div class="work-item">
+                                <h4>CLUB HOSPITALITY</h4>
+                                <p class="date">05/2023-CONT</p>
+                                <p class="company">PAVILION & AVENUE TENNIS CLUB, HOVE</p>
+                                <p>Served drinks, prepared light food, and maintained a welcoming environment. Assisted with club upkeep, cleanliness, and health and safety compliance.</p>
+                            </div>
+                            <div class="work-item">
+                                <h4>TENNIS COACH</h4>
+                                <p class="date">2022-CONT</p>
+                                <p>LTA Level 2 Instructor Coach delivering structured sessions for all ages. Focused on technique, progression, and safety while fostering a positive environment. DBS checked.</p>
+                            </div>
+                            <div class="work-item">
+                                <h4>TENNIS OFFICIAL</h4>
+                                <p class="date">2021 – CONT</p>
+                                <p>LTA Referee (R3 Grade) & Court Supervisor ensuring fair play, enforcing rules, and making accurate decisions under pressure. Skilled in match procedures, player conduct, and delivering tournaments.</p>
+                            </div>
+                        </div>
+
+                        <div class="cv-section">
+                            <h3><i class="fas fa-trophy"></i> TENNIS ACHIEVEMENTS</h3>
+                            <p>A high performing tennis player competing at county level, representing my county in junior and senior categories. Achieved a career-high national ranking of Top 130 (U18) and Top 300 (senior). I am currently a member of the All England Lawn Tennis Club. Tennis has shaped my resilience, strategy, and performance under pressure. In 2022, I achieved the LTA Young Person of the Year Award regionally for London & South-East. This highlighted my hard work and commitment to the sport on a voluntary basis. I am a current county champion.</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-right">
+                        <div class="cv-section">
+                            <h3><i class="fas fa-user"></i> ABOUT ME</h3>
+                            <ul class="about-list">
+                                <li>Motivated and adaptable with a strong passion for coding, programming, and problem-solving.</li>
+                                <li>Skilled in developing and implementing creative solutions while learning new technologies.</li>
+                                <li>Highly organized and capable of managing projects independently or within a team.</li>
+                                <li>Eager to take on new challenges and improve efficiency in any task.</li>
+                                <li>Actively seeking work experience (paid or unpaid) to develop skills and gain experience.</li>
+                                <li>Thrives in fast-paced environments and enjoys tackling complex challenges.</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-section">
+                            <h3><i class="fas fa-rocket"></i> CAREER GOALS</h3>
+                            <ul class="goals-list">
+                                <li>Aspire to become a cybersecurity leader, specializing in penetration testing and web applications.</li>
+                                <li>Commit to staying ahead of emerging security threats and solutions.</li>
+                                <li>Seek to explore and master web application and software vulnerability mitigation.</li>
+                                <li>Aim to deepen expertise in ethical hacking, vulnerability assessment, and application security.</li>
+                                <li>Strive to lead teams in the development and implementation of proactive cybersecurity measures.</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-section">
+                            <h3><i class="fas fa-code"></i> TECHNOLOGIES</h3>
+                            <p>Passionate about coding and learning new languages, showcased in this GitHub repo. Currently exploring app development with plans to launch my first app on Google Play. Recently built my personal website using HTML, CSS, and JavaScript, highlighting my web development skills. Highly proficient in various computing tools and technologies, with experience in Excel for data analysis and automation. Skilled in multiple programming languages and frameworks, with a strong understanding of Active Directory and Group Policies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Jayden Hobbs. All rights reserved.</p>
+        <p>&copy; 2025 Jayden Hobbs | Secured with &lt;/&gt; and ❤️</p>
     </footer>
+</body>
+</html>

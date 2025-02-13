@@ -3,103 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jayden Hobbs</title>
+    <title>About | Jayden Hobbs</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
+    <div class="matrix-bg"></div>
+    
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html">Jayden Hobbs</a>
+                <a href="index.html">&lt;JH/&gt;</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="work.html">My Work</a></li>
-                <li><a href="myCV.html">My CV</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Projects</a></li>
+                <li><a href="myCV.html">CV</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="three-column-layout">
-            <!-- Education Column -->
-            <div class="column">
-                <div class="about-card">
-                    <h2>EDUCATION 🎓🏫</h2>
-                    <h3>Leeds Beckett University</h3>
-                    <ul>
-                        <li>BSc (Hons) Cyber Security</li>
-                        <li>September 2024 - Present</li>
-                    </ul>
-                    
-                    <h3>Brighton Hove Sussex Sixth Form College</h3>
-                    <ul>
-                        <li>September 2023 - June 2024</li>
-                        <li>A-Levels: History and Physics</li>
-                        <li>BTEC Level 3: Distinction in Computing</li>
-                    </ul>
-                    
-                    <h3>Lancing College</h3>
-                    <ul>
-                        <li>September 2019 - June 2023</li>
-                        <li>9 GCSE's including 7's in Maths, English, Geography and History</li>
-                        <li>1 Grade 87 in Combined Science</li>
-                    </ul>
-                </div>
+        <section class="content">
+            <div class="terminal-header">
+                <span class="terminal-button"></span>
+                <span class="terminal-button"></span>
+                <span class="terminal-button"></span>
+                <span class="terminal-title">jayden@localhost:~/about$</span>
             </div>
+            <div class="terminal-content">
+                <div class="grid-container">
+                    <!-- Education Section -->
+                    <div class="grid-item">
+                        <div class="section-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h2>Education</h2>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h3>Leeds Beckett University</h3>
+                                <p class="timeline-date">September 2024 - Present</p>
+                                <p>BSc (Hons) Cyber Security</p>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <h3>Brighton Hove Sussex Sixth Form College</h3>
+                                <p class="timeline-date">September 2023 - June 2024</p>
+                                <ul>
+                                    <li>A-Levels: History and Physics</li>
+                                    <li>BTEC Level 3: Distinction in Computing</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <h3>Lancing College</h3>
+                                <p class="timeline-date">September 2019 - June 2023</p>
+                                <ul>
+                                    <li>9 GCSE's including 7's in Maths, English, Geography and History</li>
+                                    <li>1 Grade 87 in Combined Science</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- About Me Column -->
-            <div class="column">
-                <div class="about-card">
-                    <h2>ABOUT ME 🤵🧑‍💻</h2>
-                    <p>Hello! I'm Jayden, a current student with a passion for programming and technology. I am currently studying Cyber Security at Leeds Beckett University. In my first year so far, I have covered:</p>
-                    <ul>
-                        <li>Fundamentals of Computer Programming (Python)</li>
-                        <li>Fundamentals of Digital Forensics</li>
-                        <li>Computer Communications</li>
-                        <li>Ethical Hacking</li>
-                        <li>Object-Oriented Programming (Java)</li>
-                        <li>Fundamentals of Databases</li>
-                    </ul>
-                    <br>
-                </div>
-            </div>
+                    <!-- About Me Section -->
+                    <div class="grid-item">
+                        <div class="section-header">
+                            <i class="fas fa-user-shield"></i>
+                            <h2>About Me</h2>
+                        </div>
+                        <p>Hello! I'm Jayden, a current student with a passion for programming and technology. I am currently studying Cyber Security at Leeds Beckett University. In my first year so far, I have covered:</p>
+                        <div class="course-modules">
+                            <span class="module-tag">Fundamentals of Computer Programming (Python)</span>
+                            <span class="module-tag">Fundamentals of Digital Forensics</span>
+                            <span class="module-tag">Computer Communications</span>
+                            <span class="module-tag">Ethical Hacking</span>
+                            <span class="module-tag">Object-Oriented Programming (Java)</span>
+                            <span class="module-tag">Fundamentals of Databases</span>
+                        </div>
+                    </div>
 
-            <!-- Skills Column -->
-            <div class="column">
-                <div class="about-card">
-                    <h2>SKILLS 🚀</h2>
-                    <ul>
-                        <li>Programming</li>
-                        <li>Excel</li>
-                        <li>Python</li>
-                        <li>Problem Solving</li>
-                        <li>Determination</li>
-                        <li>Teamwork</li>
-                        <li>A genuine love for learning and technology!</li>
-                    </ul>
-                </div>
-            </div>
+                    <!-- Skills Section -->
+                    <div class="grid-item">
+                        <div class="section-header">
+                            <i class="fas fa-code"></i>
+                            <h2>Skills</h2>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Programming</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-table"></i>
+                                <span>Excel</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>Problem Solving</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-bullseye"></i>
+                                <span>Determination</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-users"></i>
+                                <span>Teamwork</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-heart"></i>
+                                <span>Love for Technology!</span>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- Outside Studies Column -->
-            <div class="column">
-                <div class="about-card">
-                    <h2>OUTSIDE STUDIES 🎾</h2>
-                    <p>Outside of my studies, I play lots of tennis. I currently represent my university in the BUCS leagues and have represented my county in the past. 🎾🏆</p>
-                    <br>
-                    <p>Alongside my studies, I have also worked on my own projects such as creating my first iOS application and working on this website right now! 💻📲</p>
-                    <br>
+                    <!-- Outside Studies Section -->
+                    <div class="grid-item">
+                        <div class="section-header">
+                            <i class="fas fa-tennis-ball"></i>
+                            <h2>Outside Studies</h2>
+                        </div>
+                        <div class="hobby-content">
+                            <p><i class="fas fa-trophy"></i> Outside of my studies, I play lots of tennis. I currently represent my university in the BUCS leagues and have represented my county in the past.</p>
+                            <p><i class="fas fa-mobile-alt"></i> Alongside my studies, I have also worked on my own projects such as creating my first iOS application and working on this website right now!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Jayden Hobbs. All rights reserved.</p>
+        <p>&copy; 2025 Jayden Hobbs | Secured with &lt;/&gt; and ❤️</p>
     </footer>
 </body>
-</html> 
+</html>

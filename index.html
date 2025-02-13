@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jayden Hobbs</title>
+    <title>Jayden Hobbs | Cyber Security Student</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
+    <div class="matrix-bg"></div>
+    
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html">Jayden Hobbs</a>
+                <a href="index.html">&lt;JH/&gt;</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="work.html">My Work</a></li>
-                <li><a href="myCV.html">My CV</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Projects</a></li>
+                <li><a href="myCV.html">CV</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -29,17 +34,32 @@
         <section class="content">
             <div class="intro-container">
                 <div class="intro-text">
-                    <h1>Hi, I'm Jayden!</h1>
-                    <br>
-                    <p>I'm a first-year Cyber Security student at Leeds Beckett University, passionate about programming, app development and digital forensics.</p>
-                    <br>
-                    <div class="social-links">
-                        <a href="https://github.com/jayden-hobbs" target="_blank" class="social-badge github">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://www.linkedin.com/in/jaydenhobbs/" target="_blank" class="social-badge linkedin">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
+                    <div class="terminal-header">
+                        <span class="terminal-button"></span>
+                        <span class="terminal-button"></span>
+                        <span class="terminal-button"></span>
+                        <span class="terminal-title">jayden@localhost:~$</span>
+                    </div>
+                    <div class="terminal-content">
+                        <p class="typing-effect">> Hello World! I'm Jayden_</p>
+                        <h1>Cyber Security Student & Tech Enthusiast</h1>
+                        <p class="description">Exploring the digital frontier through code and security. Currently studying Cyber Security at Leeds Beckett University, with a focus on programming, app development, and digital forensics.</p>
+                        
+                        <div class="skills-container">
+                            <span class="skill-tag">Cyber Security</span>
+                            <span class="skill-tag">Digital Forensics</span>
+                            <span class="skill-tag">Programming</span>
+                            <span class="skill-tag">App Development</span>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/jayden-hobbs" target="_blank" class="social-badge github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/jaydenhobbs/" target="_blank" class="social-badge linkedin">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="profile-image">
@@ -50,7 +70,18 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Jayden Hobbs. All rights reserved.</p>
+        <p>&copy; 2025 Jayden Hobbs | Secured with &lt;/&gt; and ❤️</p>
     </footer>
+
+    <script>
+        // Add typing effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const typingText = document.querySelector('.typing-effect');
+            typingText.style.width = '0';
+            setTimeout(() => {
+                typingText.style.width = '100%';
+            }, 1000);
+        });
+    </script>
 </body>
-</html> 
+</html>

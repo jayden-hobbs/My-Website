@@ -1,0 +1,202 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.project-card {
+    background: rgba(17, 34, 64, 0.5);
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, 
+        rgba(100, 255, 218, 0.1) 0%,
+        transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-header i {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.project-header h3 {
+    color: var(--text-primary);
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.language-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    background: rgba(17, 34, 64, 0.8);
+    color: var(--text-primary);
+    border: 1px solid;
+}
+
+.badge i {
+    font-size: 1rem;
+}
+
+/* Updated badge colors with better contrast */
+.badge.python { 
+.badge.python { 
+    color: #4B8BBE; /* Brighter Python blue */
+    border-color: #4B8BBE;
+    background: rgba(75, 139, 190, 0.15);
+    font-weight: 500;
+    color: #4B8BBE; /* Brighter Python blue */
+    border-color: #4B8BBE;
+    background: rgba(75, 139, 190, 0.15);
+    font-weight: 500;
+}
+.badge.java { 
+    color: #f89820; 
+    border-color: #f89820;
+    background: rgba(248, 152, 32, 0.1);
+}
+.badge.rust { 
+    color: #dea584; 
+    border-color: #dea584;
+    background: rgba(222, 165, 132, 0.1);
+}
+.badge.ruby { 
+    color: #ff6b6b; 
+    border-color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+}
+.badge.kotlin { 
+    color: #A97BFF; 
+    border-color: #A97BFF;
+    background: rgba(169, 123, 255, 0.1);
+}
+.badge.json { 
+    color: #ffd700; 
+    border-color: #ffd700;
+    background: rgba(255, 215, 0, 0.1);
+}
+.badge.html { 
+    color: #ff6b6b; 
+    border-color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+}
+.badge.css { 
+    color: #6b9fff; 
+    border-color: #6b9fff;
+    background: rgba(107, 159, 255, 0.1);
+}
+.badge.javascript { 
+    color: #f7df1e; 
+    border-color: #f7df1e;
+    background: rgba(247, 223, 30, 0.1);
+}
+.badge.sql { 
+.badge.sql { 
+    color: #00A6ED; /* Brighter SQL blue */
+    border-color: #00A6ED;
+    background: rgba(0, 166, 237, 0.15);
+    font-weight: 500;
+    color: #00A6ED; /* Brighter SQL blue */
+    border-color: #00A6ED;
+    background: rgba(0, 166, 237, 0.15);
+    font-weight: 500;
+}
+.badge.ducky { 
+    color: #FFD700; 
+    border-color: #FFD700;
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.project-links {
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background: rgba(100, 255, 218, 0.05);
+}
+
+.github-link:hover {
+    background: rgba(100, 255, 218, 0.1);
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 1.25rem;
+    }
+
+    .language-badges {
+        justify-content: flex-start;
+    }
+}
