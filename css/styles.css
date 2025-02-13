@@ -235,6 +235,48 @@ main {
     .social-links {
         justify-content: center;
     }
+
+    /* Increase text sizes for mobile */
+    h1 {
+        font-size: 2.2rem !important;
+    }
+
+    h2 {
+        font-size: 1.8rem !important;
+    }
+
+    h3 {
+        font-size: 1.5rem !important;
+    }
+
+    p, .description {
+        font-size: 1.2rem !important;
+        line-height: 1.8;
+    }
+
+    .terminal-content {
+        padding: 2rem !important;
+    }
+
+    .terminal-header {
+        padding: 1rem !important;
+    }
+
+    .typing-effect {
+        font-size: 1.4rem !important;
+    }
+
+    /* Adjust button and link sizes */
+    button, .btn, a.btn {
+        font-size: 1.2rem !important;
+        padding: 1rem 1.5rem !important;
+    }
+
+    /* Adjust list items */
+    li {
+        font-size: 1.2rem !important;
+        margin: 0.8rem 0 !important;
+    }
 }
 
 /* GitHub Stats */
