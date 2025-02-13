@@ -92,7 +92,7 @@ main {
     display: flex;
     align-items: center;
     gap: 4rem;
-    min-height: calc(100vh - 200px);
+    min-height: calc(70vh - 200px);
 }
 
 .intro-text {
@@ -165,19 +165,13 @@ main {
     transform: translateY(-2px);
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: var(--secondary-color);
-    color: var(--text-secondary);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
+    main {
+        min-height: 100vh;
+        height: auto;
+    }
+    
     .intro-container {
         flex-direction: column-reverse;
         text-align: center;
@@ -440,4 +434,15 @@ footer {
     .contact-form iframe {
         min-height: 500px;
     }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--text-secondary);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

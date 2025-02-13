@@ -52,6 +52,28 @@
     box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
 }
 
+.terminal-flex {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.terminal-left {
+    flex: 1;
+}
+
+.profile-image {
+    flex-shrink: 0;
+    margin-top: 1rem;
+}
+
+.profile-image img {
+    border-radius: 8px;
+    box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
+    max-width: 300px;
+    height: auto;
+}
+
 .typing-effect {
     color: var(--accent-color);
     font-family: 'Fira Code', monospace;
@@ -77,22 +99,32 @@
     color: var(--text-secondary);
     line-height: 1.8;
     margin: 1.5rem 0;
+    font-size: 1rem;
 }
 
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.2rem;
     margin: 2rem 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .skill-tag {
     background: rgba(100, 255, 218, 0.1);
     color: var(--accent-color);
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
     border: 1px solid var(--accent-color);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-tag:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
 }
 
 .intro-text {
@@ -113,7 +145,7 @@
     justify-content: center;
     gap: 1.5rem;
     margin: 1rem auto;
-    width: auto;  /* Changed from fixed width */
+    width: auto;  
 }
 
 .social-badge {
@@ -125,8 +157,8 @@
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease;
-    min-width: 140px;  /* Added to make badges equal width */
-    justify-content: center;  /* Center badge content */
+    min-width: 140px;  
+    justify-content: center;  
 }
 
 .social-badge.github {
