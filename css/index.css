@@ -180,10 +180,10 @@
     margin-right: 0.5rem;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+/* Mobile Responsive Styles */
+@media screen and (max-width: 900px), (max-device-width: 900px) {
     .profile-image {
-        display: none;
+        display: none !important;
     }
 
     .terminal-flex {

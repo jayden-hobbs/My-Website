@@ -25,7 +25,7 @@
 }
 
 /* Mobile navigation styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px), (max-device-width: 900px) {
     .navbar {
         padding: 1rem;
         position: fixed;
@@ -118,8 +118,8 @@
     }
 
     /* Hide profile picture on mobile */
-    .profile-picture {
-        display: none;
+    .profile-image {
+        display: none !important;
     }
 
     /* Hamburger menu animation */
