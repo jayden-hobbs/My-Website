@@ -181,7 +181,20 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .profile-image {
+        display: none;
+    }
+
+    .terminal-flex {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .terminal-left {
+        width: 100%;
+    }
+
     .terminal-content {
         padding: 1.5rem;
     }
@@ -190,7 +203,11 @@
         font-size: 1rem;
     }
 
-    .skills-container {
-        justify-content: center;
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
     }
 }
