@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Jayden Hobbs</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Jayden Hobbs | Cyber Security Student</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/mobile-nav.css">
     <script src="https://kit.fontawesome.com/7fa747235e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,19 +83,6 @@
             setTimeout(() => {
                 typingText.style.width = '100%';
             }, 1000);
-        });
-    </script>
-    <script>
-        document.querySelector('.hamburger-menu').addEventListener('click', function() {
-            this.classList.toggle('active');
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.hamburger-menu').classList.remove('active');
-                document.querySelector('.nav-links').classList.remove('active');
-            });
         });
     </script>
     <script src="js/nav.js"></script>
