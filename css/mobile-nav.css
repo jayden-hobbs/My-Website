@@ -11,7 +11,6 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid rgba(64, 255, 196, 0.1);
-        box-sizing: border-box;
     }
 
     .navbar > .hamburger-menu {
@@ -29,7 +28,7 @@
     }
 
     .navbar > .hamburger-menu ~ .hamburger-menu {
-        display: none !important;
+        display: none;
     }
 
     .hamburger-menu span {
@@ -100,6 +99,53 @@
 
     .nav-links li a:hover {
         color: var(--accent-color) !important;
+    }
+
+    /* Mobile-specific text sizes */
+    @media screen and (max-width: 480px) {
+        h1, .h1 {
+            font-size: 2rem !important;
+        }
+
+        h2, .h2 {
+            font-size: 1.8rem !important;
+        }
+
+        h3, .h3 {
+            font-size: 1.6rem !important;
+        }
+
+        p, .p, .description {
+            font-size: 1.2rem !important;
+            line-height: 1.6 !important;
+        }
+
+        .terminal-content {
+            padding: 1.5rem !important;
+        }
+
+        .project-card {
+            padding: 1.5rem !important;
+            margin-bottom: 1.5rem !important;
+        }
+
+        .project-header h3 {
+            font-size: 1.6rem !important;
+        }
+
+        .badge {
+            font-size: 1rem !important;
+            padding: 0.6rem 1rem !important;
+        }
+
+        .github-link {
+            font-size: 1.1rem !important;
+            padding: 0.8rem 1.2rem !important;
+        }
+
+        .typing-effect {
+            font-size: 1.4rem !important;
+        }
     }
 }
 
