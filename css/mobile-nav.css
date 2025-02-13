@@ -74,11 +74,11 @@
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex !important;
     }
 
     .nav-links li {
-        margin: 1.5rem 0;
+        margin: 2rem 0;
         opacity: 0;
         transform: translateY(20px);
         transition: all 0.3s ease;
@@ -90,15 +90,16 @@
     }
 
     .nav-links li a {
-        font-size: 1.8rem;
-        padding: 0.8rem 1.2rem;
+        font-size: 2rem !important;
+        padding: 1rem 2rem !important;
         display: block;
         text-align: center;
         transition: color 0.3s ease;
+        color: var(--text-primary);
     }
 
     .nav-links li a:hover {
-        color: var(--accent-color);
+        color: var(--accent-color) !important;
     }
 }
 
