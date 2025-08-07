@@ -29,33 +29,38 @@ body {
     letter-spacing: 1px;
 }
 
+/* Container with two cards per row, centered within grid cells */
 .qual-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-    gap: 2.3rem 0rem; /* vertical and horizontal gaps */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.3rem 3rem; /* vertical and horizontal spacing */
     width: 100%;
-    justify-items: center; /* center cards inside their grid cells */
+    justify-items: center;
+    padding: 0 1rem; /* optional horizontal padding */
+    box-sizing: border-box;
 }
 
+/* Individual qualification card */
 .qual-card {
     display: flex;
     align-items: stretch;
     width: 100%;
-    max-width: 680px;    /* Increased width for balanced cards */
+    max-width: 680px; /* increased width for balanced card*/
     background: rgba(17, 34, 64, 0.82);
     border: 1.5px solid var(--accent-color);
     border-radius: 2rem;
     box-shadow: var(--shadow-outer), var(--shadow-glow);
     overflow: hidden;
     transition: transform 0.19s, box-shadow 0.18s;
+    box-sizing: border-box;
 }
 
 .qual-card:hover {
     transform: translateY(-7px) scale(1.019);
     box-shadow:
-      0 16px 36px 0 rgba(100, 255, 218, 0.12),
-      0 1px 18px 6px rgba(17, 34, 64, 0.10),
-      var(--shadow-glow);
+        0 16px 36px 0 rgba(100, 255, 218, 0.12),
+        0 1px 18px 6px rgba(17, 34, 64, 0.10),
+        var(--shadow-glow);
 }
 
 .qual-img-area {
@@ -64,19 +69,19 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, var(--accent-color) 18%, #223040 100%);
-    min-height: auto;  /* dynamic height */
+    min-height: auto; /* dynamic height */
     max-width: 220px;
 }
 
 .qual-img {
     width: 175px;
     height: 175px;
-    object-fit: contain;  /* changed to contain to avoid cropping */
+    object-fit: contain; /* avoid cropping */
     border-radius: 50%;
     background: #181e2a;
     box-shadow:
-      0 2px 28px 0 rgba(100, 255, 218, 0.14),
-      0 0 0 8px #112240 inset;
+        0 2px 28px 0 rgba(100, 255, 218, 0.14),
+        0 0 0 8px #112240 inset;
     border: 5px solid #16213f;
     display: block;
     transition: box-shadow 0.21s, transform 0.14s;
@@ -84,8 +89,8 @@ body {
 
 .qual-img:hover {
     box-shadow:
-      0 2px 48px 0 rgba(100, 255, 218, 0.16),
-      0 0 0 8px var(--accent-color) inset;
+        0 2px 48px 0 rgba(100, 255, 218, 0.16),
+        0 0 0 8px var(--accent-color) inset;
     transform: scale(1.04);
 }
 
@@ -93,12 +98,13 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* center all contents horizontally */
+    align-items: center; /* horizontally center contents */
     justify-content: center;
     padding: 2.2rem 2rem;
     gap: 1.1rem;
     min-width: 0;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .qual-title {
@@ -112,7 +118,7 @@ body {
 .qual-info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.4rem 1.5rem;  /* tightened gaps */
+    gap: 0.4rem 1.5rem; /* tighter spacing */
     width: 100%;
     color: var(--text-primary);
     font-size: 1.05rem;
@@ -127,7 +133,7 @@ body {
 .qual-license-link-area {
     width: 100%;
     display: flex;
-    justify-content: center; /* center the license link */
+    justify-content: center; /* center license link */
     margin-top: 0.2rem;
 }
 
@@ -156,17 +162,19 @@ body {
     box-shadow: 0 8px 22px rgba(100, 255, 218, 0.13);
 }
 
-/* Responsive adjustments for mobile and tablet */
+/* Responsive: stack on smaller screens */
 @media (max-width: 900px) {
     .qual-list {
-        grid-template-columns: 1fr; /* Stack to single column */
+        grid-template-columns: 1fr; /* single column */
         gap: 2.2rem;
+        padding: 0 0.8rem;
     }
     .qual-card {
         max-width: 98vw;
     }
 }
 
+/* Mobile: stacked cards with adjusted image size and padding */
 @media (max-width: 650px) {
     .qual-card {
         flex-direction: column;
