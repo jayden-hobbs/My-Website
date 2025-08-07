@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Qualifications | Jayden Hobbs</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- Core site styles and navigation -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mobile-nav.css" />
+    <!-- Qualifications-specific styles -->
+    <link rel="stylesheet" href="css/qualifications.css" />
+
+    <!-- Font Awesome Kit (optional) -->
+    <script src="https://kit.fontawesome.com/7fa747235e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="matrix-bg"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">&lt;JH/&gt;</a>
+            </div>
+            <button class="hamburger-menu" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="myCV.html">CV</a></li>
+                <li><a href="qualifications.html" class="active" aria-current="page">My Qualifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="qual-main-section" aria-label="Qualifications">
+            <h1 class="qual-heading">My Qualifications</h1>
+            <div class="qual-list" role="list">
+                <!-- Example Qualification Card -->
+                <article class="qual-card" role="listitem">
+                    <div class="qual-img-area">
+                        <img 
+                            src="images/comptiatech.webp" 
+                            alt="CompTIA Tech+ Certificate" 
+                            class="qual-img"
+                        />
+                    </div>
+                    <div class="qual-details">
+                        <h2 class="qual-title">CompTIA Tech+</h2>
+                        <div class="qual-info-grid">
+                            <div><strong>Provider:</strong> IT Certify</div>
+                            <div><strong>Date:</strong> 6 March 2025</div>
+                            <div><strong>Score:</strong> 88%</div>
+                            <div><strong>Course Code:</strong> FC0-U71</div>
+                        </div>
+                        <div class="qual-license-link-area">
+                            <a class="qual-license-link"
+                               href="/certificates/comptiatech.pdf"
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                View License
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="qual-card" role="listitem">
+                    <div class="qual-img-area">
+                        <img 
+                            src="images/lbu.png" 
+                            alt="level 4 lbu certificate" 
+                            class="qual-img"
+                        />
+                    </div>
+                    <div class="qual-details">
+                        <h2 class="qual-title">Level 4 BSc (Hons) Cyber Security - Completion </h2>
+                        <div class="qual-info-grid">
+                            <div><strong>Provider:</strong> Leeds Beckett University</div>
+                            <div><strong>Date:</strong> 18 May 2025</div>
+                            <div><strong>Score:</strong> 75% - Pass</div>
+                        </div>
+                        <div class="qual-license-link-area">
+                            <a class="qual-license-link"
+                               href="/certificates/level4lbu.pdf"
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                View License
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Add more <article class="qual-card"> ... </article> as needed -->
+            </div>
+        </section>
+    </main>
+    <script src="js/nav.js"></script>
+</body>
+</html>
